@@ -12,7 +12,7 @@ export const Header = ({ className }: HeaderProps) => {
   const width = useScreenSize().width
 
   return (
-    <header className={clsx(s.header, className)}>
+    <header id={'#'} className={clsx(s.header, className)}>
       <Container className={s.header__container}>
         <LogoIcon idLogo={'logo'} />
         {width < 576 ? <MenuMobile /> : <MenuDesktop />}

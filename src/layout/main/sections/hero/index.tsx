@@ -13,7 +13,7 @@ export const Hero = () => {
   const width = useScreenSize().width
 
   return (
-    <section className={s.hero} id={'#hero'}>
+    <section className={s.hero} id={'home'}>
       <Container className={s.hero__container}>
         <Typography as={'h1'} className={s.hero__title} variant={'h1'}>
           Hi 👋,
