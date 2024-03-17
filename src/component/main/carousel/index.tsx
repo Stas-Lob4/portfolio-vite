@@ -9,17 +9,15 @@ import s from './carousel.module.scss'
 export const Carousel = () => {
   const [ref] = useKeenSlider<HTMLDivElement>({
     breakpoints: {
-      '(max-width: 780px)': {
+      '(max-width: 800px)': {
         slides: {
-          origin: 'center',
-          perView: 1,
+          perView: 2,
           spacing: 10,
         },
       },
-      '(max-width: 1100px)': {
+      '(max-width: 588px)': {
         slides: {
-          origin: 5,
-          perView: 2,
+          perView: 1,
           spacing: 10,
         },
       },
