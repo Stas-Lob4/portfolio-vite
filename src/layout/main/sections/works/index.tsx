@@ -1,5 +1,5 @@
-import { User } from '@/data/data'
 import { Container, Icon, Typography } from '@/component'
+import { User } from '@/data/data'
 
 import s from './works.module.scss'
 
@@ -12,9 +12,9 @@ export const Works = () => {
           <div className={s.worksList}>
             {User.works.map((item, index) => {
               return (
-                <div key={index} className={s.listItem}>
+                <div className={s.listItem} key={index}>
                   <div className={s.wrapper}>
-                    <Typography variant={'p'} className={s.title}>
+                    <Typography className={s.title} variant={'p'}>
                       {item.position}
                     </Typography>
                     <button className={s.button}>{item.btnTitle}</button>
@@ -22,16 +22,16 @@ export const Works = () => {
                   <div className={s.wrapper}>
                     <div className={s.item__wrapper}>
                       <div className={s.wrapper__item}>
-                        <Icon iconId={'office'} width={16} height={12} />
+                        <Icon height={12} iconId={'office'} width={16} />
                         <Typography variant={'span'}>{item.office}</Typography>
                       </div>
                       <div className={s.wrapper__item}>
-                        <Icon iconId={'location'} width={16} height={12} />
+                        <Icon height={12} iconId={'location'} width={16} />
                         <Typography variant={'span'}>{item.location}</Typography>
                       </div>
                     </div>
                     <div className={s.wrapper__item}>
-                      <Icon iconId={'calendar'} width={16} height={12} />
+                      <Icon height={12} iconId={'calendar'} width={16} />
                       <Typography variant={'span'}>{item.time}</Typography>
                     </div>
                   </div>

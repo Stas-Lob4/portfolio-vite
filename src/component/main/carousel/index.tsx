@@ -1,37 +1,39 @@
-import { useKeenSlider } from 'keen-slider/react'
-import { User } from '@/data/data'
 import { Icon, Image } from '@/component'
+import { User } from '@/data/data'
+import { useKeenSlider } from 'keen-slider/react'
+
 import 'keen-slider/keen-slider.min.css'
 
 import s from './carousel.module.scss'
 
 export const Carousel = () => {
   const [ref] = useKeenSlider<HTMLDivElement>({
+    breakpoints: {
+      '(max-width: 780px)': {
+        slides: {
+          origin: 'center',
+          perView: 1,
+          spacing: 10,
+        },
+      },
+      '(max-width: 1100px)': {
+        slides: {
+          origin: 5,
+          perView: 2,
+          spacing: 10,
+        },
+      },
+    },
     loop: true,
     rtl: true,
     slides: {
       perView: 3,
       spacing: 10,
     },
-    breakpoints: {
-      '(max-width: 1100px)': {
-        slides: {
-          perView: 2,
-          spacing: 10,
-          origin: 5,
-        },
-      },
-      '(max-width: 780px)': {
-        slides: {
-          perView: 1,
-          spacing: 10,
-          origin: 'center',
-        },
-      },
-    },
   })
+
   return (
-    <div ref={ref} className="keen-slider">
+    <div className={'keen-slider'} ref={ref}>
       {items}
     </div>
   )
@@ -39,9 +41,9 @@ export const Carousel = () => {
 
 const items = User.projects.map((item, index) => {
   return (
-    <div key={index} className="keen-slider__slide">
+    <div className={'keen-slider__slide'} key={index}>
       <div className={s.item}>
-        <Image alt={'Project Image'} src={item.image} className={s.image} />
+        <Image alt={'Project Image'} className={s.image} src={item.image} />
         <div className={s.boxInfo}>
           <h4 className={s.boxInfo__title}>{item.title}</h4>
           <p className={s.boxInfo__descr}>{item.description}</p>
@@ -51,11 +53,11 @@ const items = User.projects.map((item, index) => {
           </p>
           <div className={s.boxInfo__links}>
             <div className={s.boxInfo__links__item}>
-              <Icon iconId={'link_dark'} width={20} height={20} />
+              <Icon height={20} iconId={'link_dark'} width={20} />
               <a href={item.srcUrl}>Live Preview</a>
             </div>
             <div className={s.boxInfo__links__item}>
-              <Icon iconId={'github_3_dark'} width={20} height={20} />
+              <Icon height={20} iconId={'github_3_dark'} width={20} />
               <a href={item.srcGit}>View Code</a>
             </div>
           </div>

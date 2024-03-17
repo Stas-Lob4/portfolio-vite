@@ -1,12 +1,13 @@
-import s from './contacts.module.scss'
 import { Container, IconsList, LogoIcon, Typography } from '@/component'
 import { User } from '@/data/data'
 
+import s from './contacts.module.scss'
+
 export const Contacts = () => {
   return (
-    <section id={'contact'} className={s.contacts}>
+    <section className={s.contacts} id={'contact'}>
       <Container className={s.contacts__container}>
-        <Typography variant={'h2'} className={s.title}>
+        <Typography className={s.title} variant={'h2'}>
           For any questions please mail me:
           <br />
           <a href={'mailto:lobchuk.stanislav@gmail.com'}>{User.contacts.email}</a>
@@ -14,10 +15,10 @@ export const Contacts = () => {
         <div className={s.wrapper}>
           <LogoIcon idLogo={'logo'} />
           <div className={s.wrapper__contacts}>
-            <Typography variant={'p'} className={s.item}>
+            <Typography className={s.item} variant={'p'}>
               {User.contacts.telephone}
             </Typography>
-            <Typography variant={'p'} className={s.item}>
+            <Typography className={s.item} variant={'p'}>
               {User.contacts.email}
             </Typography>
             <IconsList data={User.contacts.socials} />

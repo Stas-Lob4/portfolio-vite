@@ -8,7 +8,7 @@ type TextProps<T extends ElementType> = {
   as?: T
   children?: ReactNode
   className?: string
-  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'subtitle' | 'span' | 'a'
+  variant?: 'a' | 'h1' | 'h2' | 'h3' | 'h4' | 'p' | 'span' | 'subtitle'
 } & ComponentPropsWithoutRef<'p'>
 
 export const Typography = <T extends ElementType = 'p'>(

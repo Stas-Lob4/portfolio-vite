@@ -1,6 +1,6 @@
+import useScreenSize from '@/common/hooks/useScreenSize'
 import { Container, NavList, Typography } from '@/component'
 import { MenuList } from '@/data/data'
-import useScreenSize from '@/common/hooks/useScreenSize'
 
 import s from './footer.module.scss'
 

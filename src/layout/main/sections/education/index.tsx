@@ -1,7 +1,7 @@
 import { Container, Icon, Typography } from '@/component'
+import { User } from '@/data/data'
 
 import s from './education.module.scss'
-import { User } from '@/data/data'
 
 export const Education = () => {
   return (
@@ -12,20 +12,20 @@ export const Education = () => {
           <div className={s.educationList}>
             {User.education.map((item, index) => {
               return (
-                <div key={index} className={s.listItem}>
+                <div className={s.listItem} key={index}>
                   <div className={s.wrapper}>
-                    <Typography variant={'p'} className={s.title}>
+                    <Typography className={s.title} variant={'p'}>
                       {item.position}
                     </Typography>
                     <button className={s.button}>{item.btnTitle}</button>
                   </div>
                   <div className={s.wrapper}>
                     <div className={s.wrapper__item}>
-                      <Icon iconId={'office'} width={16} height={12} />
+                      <Icon height={12} iconId={'office'} width={16} />
                       <Typography variant={'span'}>{item.position}</Typography>
                     </div>
                     <div className={s.wrapper__item}>
-                      <Icon iconId={'calendar'} width={16} height={12} />
+                      <Icon height={12} iconId={'calendar'} width={16} />
                       <Typography variant={'span'}>{item.time}</Typography>
                     </div>
                   </div>
