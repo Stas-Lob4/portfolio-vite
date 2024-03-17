@@ -1,13 +1,23 @@
-import image_1 from '../../assets/img/Rectangle_1.webp'
-import image_2 from '../../assets/img/Rectangle_2.webp'
-import image_3 from '../../assets/img/Rectangle_3.webp'
-import image_4 from '../../assets/img/Rectangle_4.webp'
-import image_5 from '../../assets/img/Rectangle_5.webp'
-import image_6 from '../../assets/img/Rectangle_6.webp'
+import { MenuListType, UserType } from '@/common'
 
-export const DATA: DataType = {
+import image_1 from '../assets/img/Rectangle_1.webp'
+import image_2 from '../assets/img/Rectangle_2.webp'
+import image_3 from '../assets/img/Rectangle_3.webp'
+import image_4 from '../assets/img/Rectangle_4.webp'
+import image_5 from '../assets/img/Rectangle_5.webp'
+import image_6 from '../assets/img/Rectangle_6.webp'
+
+export const User: UserType = {
   aboutText:
     'The Generator App is an online tool that helps you to export ready-made templates ready to work as our future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.',
+  contacts: {
+    email: 'stas.lobchuk@gmail.com',
+    socials: [
+      { href: 'https://github.com/Stas-Lob4', iconId: 'github2' },
+      { href: 'https://www.linkedin.com/in/stanislav-lobchuk-13a832237/', iconId: 'linkedin' },
+      { href: 'https://twitter.com/LobcukStanislav', iconId: 'twitter' },
+    ],
+  },
   education: [
     {
       btnTitle: 'Full Time',
@@ -109,36 +119,10 @@ export const DATA: DataType = {
     },
   ],
 }
-
-export type DataType = {
-  aboutText: string
-  education: EducationDataType
-  name: string
-  projects: ProjectsDataType
-  works: WorksDataType
-}
-
-export type EducationDataType = {
-  btnTitle: string
-  office: string
-  position: string
-  time: string
-}[]
-
-export type ProjectsDataType = {
-  description: string
-  id: number
-  image: string
-  srcGit: string
-  srcUrl: string
-  techStack: string
-  title: string
-}[]
-
-export type WorksDataType = {
-  btnTitle: string
-  location: string
-  office: string
-  position: string
-  time: string
-}[]
+export const MenuList: MenuListType = [
+  { href: '#home', id: 1, title: 'Home' },
+  { href: '#about', id: 2, title: 'About' },
+  { href: '#tech_stack', id: 3, title: 'Tech Stack' },
+  { href: '#project', id: 4, title: 'Projects' },
+  { href: '#contact', id: 5, title: 'Contact' },
+]

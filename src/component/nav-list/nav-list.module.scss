@@ -1,0 +1,14 @@
+.navList {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  &__item:hover {
+    text-decoration: underline;
+  }
+}
+
+.mobile {
+  flex-direction: column;
+}

@@ -1,0 +1,25 @@
+:root {
+  // font-size
+  --font-size-h1: calc((100vw - 360px) / (1920 - 360) * (58 - 30) + 30px);
+  --font-size-h2: calc((100vw - 320px) / (1920 - 320) * (58 - 20) + 20px);
+  --font-size-h3: calc((100vw - 360px) / (1920 - 360) * (48 - 28) + 28px);
+  --font-size-h4: calc((100vw - 360px) / (1920 - 360) * (46 - 25) + 25px);
+  --font-size-p: calc((100vw - 360px) / (1920 - 360) * (20 - 15) + 15px);
+  --font-size-subtitle: calc((100vw - 360px) / (1920 - 360) * (32 - 15) + 15px);
+  --font-size-a: 20px;
+
+  // line-height
+  --line-height-h1: calc((100vw - 360px) / (1920 - 360) * (70 - 50) + 50px);
+  --line-height-h2: calc((100vw - 360px) / (1920 - 360) * (70 - 30) + 30px);
+  --line-height-h3: calc((100vw - 360px) / (1920 - 360) * (24 - 16) + 16px);
+  --line-height-h4: 52px;
+  --line-height-subtitle: 26px;
+  --line-height-p: 24px;
+  --line-height-a: 26px;
+
+  // font-weight
+  --font-weight-font: 700;
+  --font-weight-subtitle: 400;
+  --font-weight-p: 400;
+  --font-weight-a: 500;
+}

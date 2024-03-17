@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    svg:hover {
+      fill: #fff;
+    }
+  }
+}

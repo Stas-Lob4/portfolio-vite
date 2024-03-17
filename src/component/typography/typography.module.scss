@@ -1,0 +1,71 @@
+@mixin typography($fontSize, $lineHeight, $fontWeight, $color) {
+  margin: 0;
+
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+.p {
+  @include typography(
+    var(--font-size-p),
+    var(--line-height-p),
+    var(--font-weight-p),
+    var(--color-font-p)
+  );
+}
+
+.h1 {
+  @include typography(
+    var(--font-size-h1),
+    var(--line-height-h1),
+    var(--font-weight-h1),
+    var(--color-font-h1)
+  );
+}
+
+.h2 {
+  @include typography(
+    var(--font-size-h2),
+    var(--line-height-h2),
+    var(--font-weight-h2),
+    var(--color-font)
+  );
+}
+
+.h3 {
+  @include typography(
+    var(--font-size-h3),
+    var(--line-height-h3),
+    var(--font-weight-h3),
+    var(--color-font-h3-h4)
+  );
+}
+
+.h4 {
+  @include typography(
+    var(--font-size-h4),
+    var(--line-height-h4),
+    var(--font-weight-h4),
+    var(--color-font-h3-h4)
+  );
+}
+
+.subtitle {
+  @include typography(
+    var(--font-size-subtitle),
+    var(--line-height-h4),
+    var(--font-weight-h4),
+    var(--color-font-h3-sub)
+  );
+
+  .a {
+    @include typography(
+      var(--font-size-a),
+      var(--line-height-a),
+      var(--font-weight-a),
+      var(--color-font-a)
+    );
+  }
+}

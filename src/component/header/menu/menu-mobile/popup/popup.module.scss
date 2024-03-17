@@ -1,0 +1,17 @@
+.popup {
+  position: fixed;
+  z-index: 99999;
+  inset: 0;
+
+  display: none;
+
+  background-color: rgb(25 25 25 / 90%);
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}

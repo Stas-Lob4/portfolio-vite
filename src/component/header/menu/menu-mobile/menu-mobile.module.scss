@@ -1,0 +1,8 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+
+  &__navList {
+    flex-direction: column;
+  }
+}
