@@ -68,4 +68,13 @@
       var(--color-font-a)
     );
   }
+
+  .span {
+    @include typography(
+      var(--font-size-span),
+      var(--line-height-span),
+      var(--font-weight-span),
+      var(--color-font-span)
+    );
+  }
 }

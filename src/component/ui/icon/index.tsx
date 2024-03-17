@@ -1,6 +1,6 @@
 import { SvgType } from '@/common'
 
-import iconSprite from '../../assets/svg/icons-sprite.svg'
+import iconSprite from '../../../assets/svg/icons-sprite.svg'
 
 type IconProps = {
   fill?: string

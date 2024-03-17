@@ -14,6 +14,7 @@ export type UserType = {
 
 export type ContactsDataType = {
   email: string
+  telephone: string
   socials: SocialsType
 }
 

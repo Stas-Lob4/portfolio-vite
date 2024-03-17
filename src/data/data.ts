@@ -12,6 +12,7 @@ export const User: UserType = {
     'The Generator App is an online tool that helps you to export ready-made templates ready to work as our future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.',
   contacts: {
     email: 'stas.lobchuk@gmail.com',
+    telephone: '+91 12345 09876',
     socials: [
       { href: 'https://github.com/Stas-Lob4', iconId: 'github2' },
       { href: 'https://www.linkedin.com/in/stanislav-lobchuk-13a832237/', iconId: 'linkedin' },

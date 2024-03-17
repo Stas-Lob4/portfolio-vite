@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+
+    @media screen and (width <= 900px) {
+      justify-content: center;
+    }
+  }
+}
+
+.copiratet {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #a7a7a7;
+  text-align: center;
+
+  span {
+    background: var(--color-gradient-Backgr);
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+}

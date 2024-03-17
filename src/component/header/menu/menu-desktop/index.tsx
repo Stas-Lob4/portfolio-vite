@@ -1,8 +1,9 @@
 import { NavList } from '@/component'
-import { IconsList } from '@/component/icons-list'
 import { MenuList, User } from '@/data/data'
 
 import s from './menu-desktop.module.scss'
+
+import { IconsList } from '../../../ui/icons-list'
 
 export const MenuDesktop = () => {
   return (

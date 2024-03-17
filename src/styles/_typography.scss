@@ -7,6 +7,7 @@
   --font-size-p: calc((100vw - 360px) / (1920 - 360) * (20 - 15) + 15px);
   --font-size-subtitle: calc((100vw - 360px) / (1920 - 360) * (32 - 15) + 15px);
   --font-size-a: 20px;
+  --font-size-span: calc((100vw - 360px) / (1920 - 360) * (20 - 12) + 12px);
 
   // line-height
   --line-height-h1: calc((100vw - 360px) / (1920 - 360) * (70 - 50) + 50px);
@@ -16,10 +17,12 @@
   --line-height-subtitle: 26px;
   --line-height-p: 24px;
   --line-height-a: 26px;
+  --line-height-span: 28px;
 
   // font-weight
   --font-weight-font: 700;
   --font-weight-subtitle: 400;
   --font-weight-p: 400;
   --font-weight-a: 500;
+  --font-weight-span: 400;
 }

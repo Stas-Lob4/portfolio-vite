@@ -3,10 +3,11 @@ import { useState } from 'react'
 import { NavList } from '@/component'
 import { BurgerButton } from '@/component/header/menu/menu-mobile/burger-button'
 import { Popup } from '@/component/header/menu/menu-mobile/popup'
-import { IconsList } from '@/component/icons-list'
 import { MenuList, User } from '@/data/data'
 
 import s from './menu-mobile.module.scss'
+
+import { IconsList } from '../../../ui/icons-list'
 
 export const MenuMobile = () => {
   const [isOpen, setIsOpen] = useState(false)

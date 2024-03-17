@@ -1,5 +1,6 @@
 import { SvgType } from '@/common'
-import { Icon } from '@/component/icon'
+
+import { Icon } from '../icon'
 
 type LogoIconProps = {
   height?: number

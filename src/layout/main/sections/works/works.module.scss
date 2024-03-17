@@ -1,0 +1,69 @@
+.title {
+  font-size: calc((100vw - 360px) / (1920 - 360) * (25 - 18) + 18px);
+  line-height: 28px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  width: 100%;
+  max-width: 710px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    gap: 5.3px;
+    align-items: center;
+  }
+}
+
+.item {
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+.listItem {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5px;
+
+  padding-bottom: 20px;
+
+  color: white;
+
+  border-bottom: 2px solid white;
+}
+
+.button {
+  width: 84px;
+  height: 24px;
+
+  font-size: 9px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 26px;
+  color: rgb(1 140 15);
+
+  background-color: #d7ffe0;
+  border-radius: 100px;
+}
+
+.worksList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
