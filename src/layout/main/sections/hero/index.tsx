@@ -30,7 +30,7 @@ export const Hero = () => {
           Frontend Developer
           <br />
         </Typography>
-        {width >= 576 && (
+        {width >= 650 && (
           <Tilt>
             <div
               className={clsx(s.boxImage, width < 576 ? s.boxImage__mobile : s.boxImage__desktop)}

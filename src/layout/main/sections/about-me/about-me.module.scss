@@ -1,4 +1,6 @@
 .about {
+  margin-top: 150px;
+
   &__container {
     display: flex;
   }
@@ -7,6 +9,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   max-width: 710px;
 }

@@ -15,7 +15,7 @@ export const Header = ({ className }: HeaderProps) => {
     <header className={clsx(s.header, className)} id={'#'}>
       <Container className={s.header__container}>
         <LogoIcon idLogo={'logo'} />
-        {width < 576 ? <MenuMobile /> : <MenuDesktop />}
+        {width < 700 ? <MenuMobile /> : <MenuDesktop />}
       </Container>
     </header>
   )

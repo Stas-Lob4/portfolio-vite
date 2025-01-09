@@ -1,5 +1,4 @@
 import { SocialsType } from '@/common'
-import { Icon } from '@/component'
 import clsx from 'clsx'
 
 import s from './icons-list.module.scss'
@@ -16,8 +15,8 @@ export const IconsList = (props: IconsListProps) => {
     <div className={clsx(className, s.list)}>
       {data.map((item, index) => {
         return (
-          <a href={item.href} key={index}>
-            <Icon height={33} iconId={item.iconId} width={33} />
+          <a className={s.icon} href={item.href} key={index}>
+            {item.icon}
           </a>
         )
       })}

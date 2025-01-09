@@ -1,4 +1,5 @@
 import { MenuListType, UserType } from '@/common'
+import { Github, Linkedin, Twitter } from 'lucide-react'
 
 import image_1 from '../assets/img/Rectangle_1.webp'
 import image_2 from '../assets/img/Rectangle_2.webp'
@@ -8,14 +9,18 @@ import image_5 from '../assets/img/Rectangle_5.webp'
 import image_6 from '../assets/img/Rectangle_6.webp'
 
 export const User: UserType = {
-  aboutText: 'I`m a Frontend Developer with experience in building modern web applications. I' +
+  aboutText:
+    'I`m a Frontend Developer with experience in building modern web applications. I' +
     ' specialize in React, TypeScript, Redux Toolkit, and Sass, creating scalable and user-friendly interfaces. Skilled in REST API integration, developing reusable UI components, and ensuring code quality with ESLint, Prettier, and testing.',
   contacts: {
     email: 'staslob4uck@gmail.com',
     socials: [
-      { href: 'https://github.com/Stas-Lob4', iconId: 'github2' },
-      { href: 'https://www.linkedin.com/in/stanislav-lobchuk-13a832237/', iconId: 'linkedin' },
-      { href: 'https://twitter.com/LobcukStanislav', iconId: 'twitter' },
+      { href: 'https://github.com/Stas-Lob4', icon: <Github height={33} /> },
+      {
+        href: 'https://www.linkedin.com/in/stanislav-lobchuk-13a832237/',
+        icon: <Twitter height={33} />,
+      },
+      { href: 'https://twitter.com/LobcukStanislav', icon: <Linkedin height={33} /> },
     ],
     telephone: '+4916092441312',
   },

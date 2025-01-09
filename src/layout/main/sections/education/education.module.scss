@@ -7,7 +7,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
 
   width: 100%;
   max-width: 710px;
@@ -30,7 +30,7 @@
   flex-direction: column;
   gap: 5px;
 
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   color: white;
 
@@ -46,7 +46,7 @@
   font-style: normal;
   line-height: 26px;
   color: rgb(1 140 15);
-  cursor: no-drop;
+  cursor: default;
 
   background-color: #d7ffe0;
   border-radius: 100px;

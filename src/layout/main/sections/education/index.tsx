@@ -1,5 +1,6 @@
-import { Container, Icon, Typography } from '@/component'
+import { Container, Typography } from '@/component'
 import { User } from '@/data/data'
+import { Building, CalendarClock } from 'lucide-react'
 
 import s from './education.module.scss'
 
@@ -21,11 +22,11 @@ export const Education = () => {
                   </div>
                   <div className={s.wrapper}>
                     <div className={s.wrapper__item}>
-                      <Icon height={12} iconId={'office'} width={16} />
+                      <Building height={15} />
                       <Typography variant={'span'}>{item.office}</Typography>
                     </div>
                     <div className={s.wrapper__item}>
-                      <Icon height={12} iconId={'calendar'} width={16} />
+                      <CalendarClock height={15} />
                       <Typography variant={'span'}>{item.time}</Typography>
                     </div>
                   </div>

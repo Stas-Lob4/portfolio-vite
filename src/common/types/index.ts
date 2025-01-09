@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 export type Nav = {
   href: string
   title: string
@@ -20,7 +22,7 @@ export type ContactsDataType = {
 
 export type SocialsType = {
   href: string
-  iconId: SvgType
+  icon: ReactNode
 }[]
 
 export type EducationDataType = {

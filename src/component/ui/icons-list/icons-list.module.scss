@@ -5,8 +5,26 @@
   justify-content: center;
 
   a {
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      border-radius: 50%;
+      background: white;
+      color: black;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
     svg:hover {
       fill: #fff;
     }
   }
+}
+
+.icon {
+  color: white;
 }

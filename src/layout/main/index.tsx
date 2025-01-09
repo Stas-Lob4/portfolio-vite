@@ -1,3 +1,4 @@
+import { AnimatedSection } from '@/component'
 import { AboutMe } from '@/layout/main/sections/about-me'
 import { Contacts } from '@/layout/main/sections/contacts'
 import { Education } from '@/layout/main/sections/education'
@@ -10,12 +11,20 @@ export const Main = () => {
   return (
     <main>
       <Hero />
-      <AboutMe />
-      <Works />
-      <Education />
-      <Skills />
-      <Projects />
-      <Contacts />
+      <AnimatedSection>
+        <AboutMe />
+        <Works />
+        <Education />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Skills />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Projects />
+      </AnimatedSection>
+      <AnimatedSection>
+        <Contacts />
+      </AnimatedSection>
     </main>
   )
 }
