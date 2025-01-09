@@ -22,7 +22,7 @@ export const Education = () => {
                   <div className={s.wrapper}>
                     <div className={s.wrapper__item}>
                       <Icon height={12} iconId={'office'} width={16} />
-                      <Typography variant={'span'}>{item.position}</Typography>
+                      <Typography variant={'span'}>{item.office}</Typography>
                     </div>
                     <div className={s.wrapper__item}>
                       <Icon height={12} iconId={'calendar'} width={16} />

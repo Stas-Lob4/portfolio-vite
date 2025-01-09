@@ -13,13 +13,19 @@
   "dependencies": {
     "@fontsource/dm-sans": "^5.0.19",
     "@fontsource/poppins": "^5.0.12",
+    "@tsparticles/engine": "^3.7.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.7.1",
     "@types/sass": "^1.45.0",
     "@vitejs/plugin-react-swc": "^3.6.0",
     "clsx": "^2.1.0",
     "keen-slider": "^6.8.6",
+    "lucide-react": "^0.469.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax-tilt": "^1.7.215",
+    "tsparticles": "^3.7.1",
+    "tsparticles-engine": "^2.12.0",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {

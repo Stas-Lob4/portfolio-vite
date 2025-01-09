@@ -27,7 +27,7 @@ export const Hero = () => {
               strings: ['Stanislav Lobchuk'],
             }}
           />
-          I build things for web
+          Frontend Developer
           <br />
         </Typography>
         {width >= 576 && (

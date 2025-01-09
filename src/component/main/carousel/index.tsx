@@ -1,6 +1,7 @@
-import { Icon, Image } from '@/component'
+import { Image } from '@/component'
 import { User } from '@/data/data'
 import { useKeenSlider } from 'keen-slider/react'
+import { ExternalLink, Github } from 'lucide-react'
 
 import 'keen-slider/keen-slider.min.css'
 
@@ -9,15 +10,15 @@ import s from './carousel.module.scss'
 export const Carousel = () => {
   const [ref] = useKeenSlider<HTMLDivElement>({
     breakpoints: {
-      '(max-width: 800px)': {
-        slides: {
-          perView: 2,
-          spacing: 10,
-        },
-      },
       '(max-width: 588px)': {
         slides: {
           perView: 1,
+          spacing: 10,
+        },
+      },
+      '(max-width: 800px)': {
+        slides: {
+          perView: 2,
           spacing: 10,
         },
       },
@@ -50,14 +51,14 @@ const items = User.projects.map((item, index) => {
             {item.techStack}
           </p>
           <div className={s.boxInfo__links}>
-            <div className={s.boxInfo__links__item}>
-              <Icon height={20} iconId={'link_dark'} width={20} />
-              <a href={item.srcUrl}>Live Preview</a>
-            </div>
-            <div className={s.boxInfo__links__item}>
-              <Icon height={20} iconId={'github_3_dark'} width={20} />
-              <a href={item.srcGit}>View Code</a>
-            </div>
+            <a className={s.boxInfo__links__item} href={item.srcUrl}>
+              <ExternalLink height={20} width={20} />
+              Live Preview
+            </a>
+            <a className={s.boxInfo__links__item} href={item.srcGit}>
+              <Github height={20} width={20} />
+              View Code
+            </a>
           </div>
         </div>
       </div>

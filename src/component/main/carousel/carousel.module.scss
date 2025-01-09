@@ -54,6 +54,7 @@
     font-weight: 300;
     font-style: normal;
     line-height: 24px;
+    //text-align: justify;
 
     @media screen and (width <= 576px) {
       font-size: 14px;
@@ -80,23 +81,22 @@
   &__links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &__item {
       display: flex;
-      gap: 12px;
+      gap: 10px;
       align-items: center;
       justify-content: center;
 
-      a {
         font-size: calc((100vw - 320px) / (1920 - 320) * (16 - 14) + 14px);
         font-weight: 400;
         font-style: normal;
         line-height: 26px;
         color: #fff;
-      }
 
-      a:hover {
+
+      &:hover {
         color: darkgrey;
         text-decoration-line: underline;
       }

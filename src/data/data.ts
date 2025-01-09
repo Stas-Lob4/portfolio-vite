@@ -8,29 +8,35 @@ import image_5 from '../assets/img/Rectangle_5.webp'
 import image_6 from '../assets/img/Rectangle_6.webp'
 
 export const User: UserType = {
-  aboutText:
-    'The Generator App is an online tool that helps you to export ready-made templates ready to work as our future website. It helps you to combine slides, panels and other components and export it as a set of static files: HTML/CSS/JS.',
+  aboutText: 'I`m a Frontend Developer with experience in building modern web applications. I' +
+    ' specialize in React, TypeScript, Redux Toolkit, and Sass, creating scalable and user-friendly interfaces. Skilled in REST API integration, developing reusable UI components, and ensuring code quality with ESLint, Prettier, and testing.',
   contacts: {
-    email: 'stas.lobchuk@gmail.com',
+    email: 'staslob4uck@gmail.com',
     socials: [
       { href: 'https://github.com/Stas-Lob4', iconId: 'github2' },
       { href: 'https://www.linkedin.com/in/stanislav-lobchuk-13a832237/', iconId: 'linkedin' },
       { href: 'https://twitter.com/LobcukStanislav', iconId: 'twitter' },
     ],
-    telephone: '+91 12345 09876',
+    telephone: '+4916092441312',
   },
   education: [
     {
       btnTitle: 'Full Time',
-      office: 'MNAU',
-      position: 'Bachelor of Engineering',
-      time: 'Sep 2017 - Dec 2022',
+      office: 'IT-Incubator',
+      position: 'Frontend Developer',
+      time: 'Dec 2023 - Jun 2023',
     },
     {
       btnTitle: 'Full Time',
       office: 'MNAU',
       position: 'Master of Engineering',
       time: 'Sep 2022 - Dec 2023',
+    },
+    {
+      btnTitle: 'Full Time',
+      office: 'MNAU',
+      position: 'Bachelor of Engineering',
+      time: 'Sep 2017 - Dec 2022',
     },
   ],
   name: 'Stanislav Lobchuk',
@@ -98,25 +104,11 @@ export const User: UserType = {
   ],
   works: [
     {
-      btnTitle: 'Full Time',
-      location: 'Bengaluru',
-      office: 'Dr. Rajkumar’s Learning App',
+      btnTitle: 'Part Time',
+      location: 'Europa',
+      office: 'IT-Incubator',
       position: 'Junior Web Developer',
-      time: 'Sep 2021 - Dec 2021',
-    },
-    {
-      btnTitle: 'Internship',
-      location: 'Bengaluru',
-      office: 'IonPixelz Web Solutions',
-      position: 'Web Development Intern',
-      time: 'Sep 2021 - Dec 2021',
-    },
-    {
-      btnTitle: 'Internship',
-      location: 'Bengaluru',
-      office: 'HAAPS',
-      position: 'SEO / SEM Specialist',
-      time: 'Sep 2021 - Dec 2021',
+      time: 'Jun/2023 - today',
     },
   ],
 }
