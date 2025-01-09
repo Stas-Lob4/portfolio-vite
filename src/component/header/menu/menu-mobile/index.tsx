@@ -17,7 +17,7 @@ export const MenuMobile = () => {
       <BurgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
       <Popup isOpen={isOpen}>
         <NavList className={s.menu__navList} data={MenuList} />
-        <IconsList data={User.contacts.socials} />
+        <IconsList className={s.menu__icons} data={User.contacts.socials} />
       </Popup>
     </div>
   )

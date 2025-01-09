@@ -1,8 +1,25 @@
 .menu {
   display: flex;
   flex-direction: column;
+  gap: 5rem;
 
   &__navList {
+    align-items: center;
     flex-direction: column;
+    gap: 4rem;
+    a {
+      font-size: 50px;
+    }
+
+
+  }
+
+  &__icons {
+    gap: 4rem;
+
+    svg {
+      height: 40px;
+      width: 40px;
+    }
   }
 }
