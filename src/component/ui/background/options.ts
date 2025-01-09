@@ -1,4 +1,4 @@
-import { type ISourceOptions, MoveDirection, OutMode } from '@tsparticles/engine'
+import { type ISourceOptions } from '@tsparticles/engine'
 
 export const options: ISourceOptions = {
   autoPlay: true,
